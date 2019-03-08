@@ -1,0 +1,30 @@
+##
+## Git ignores for the macOS CLI with Framework project.
+## Specifies files that should be ignored by Git.
+## 
+## For more information please see:
+## https://git-scm.com/docs/gitignore
+##
+
+# Hidden file created by macOS for tracking folder attributes.
+# This is strictly personal information and can be safely ignored.
+.DS_Store
+
+# Xcode build directory.
+**/DerivedData
+
+# User-level settings for Xcode.
+**/*.xcodeproj/xcuserdata/
+**/*.xcworkspace/xcuserdata/
+
+# For a better development experience, we version all content downloaded by CocoaPods.
+# As such, you do *not* need to run `pod install` after pulling new code.
+# A detailed discussion is available at:
+# https://guides.cocoapods.org/using/using-cocoapods.html
+#/Pods
+
+# This file exists for managing Xcode's knowledge of the possibly many VCS systems in 
+# your project. For > 99% of the projects the .xccheckout file is configuration overkill.
+# http://stackoverflow.com/a/18448100/819340
+**/*.xcodeproj/**/*.xccheckout
+**/*.xcworkspace/**/*.xccheckout
